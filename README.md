@@ -274,7 +274,7 @@ No line control. No automatic rejection. No factory data leaving the site. Read 
   engineer's initial ejector-pin guess, with prevention checks and a falsifier. See
   [the example case](docs/example-case.md) and the
   [1:40 walkthrough](web/public/demo/rootcause-walkthrough.mp4).
-- **LAIX decision layer** — the generic layer is a pinned dependency (`laix @ v0.2.1`); RootCause
+- **LAIX decision layer** — the generic layer is a pinned dependency (`laix @ v0.6.0`); RootCause
   supplies the quality intervention policy as a plugin. The adapter maps quality signals into LAIX
   and back to watch / check / notification actions, and `/api/laix/*` exposes the decisions and
   outcomes. See [the LAIX module](docs/laix-module.md).

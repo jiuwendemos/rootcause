@@ -49,13 +49,13 @@ the LAIX fields (`verb`, `reason_code`, `rationale`, `evidence`, `requires_appro
 `server/pyproject.toml` pins LAIX to a tag, never a branch:
 
 ```toml
-"laix @ git+https://github.com/michaelatamuk/laix.git@v0.2.1#subdirectory=python/laix",
+"laix @ git+https://github.com/michaelatamuk/laix.git@v0.6.0#subdirectory=packages/python/laix",
 ```
 
 Local co-development, once:
 
 ```powershell
-py -m pip install -e C:\Workspace\laix\python\laix
+py -m pip install -e C:\Workspace\laix\packages\python\laix
 ```
 
 CI and release install from the pinned tag. Ordinary RootCause changes do not need a reinstall.
@@ -147,7 +147,7 @@ window and each outcome, plus **No recurrence** / **Recurred** buttons.
 
 1. Pick a new LAIX tag; do not use `main`.
 2. Change the pin in `server/pyproject.toml`.
-3. Install it: `py -m pip install "git+https://github.com/michaelatamuk/laix.git@<tag>#subdirectory=python/laix"`.
+3. Install it: `py -m pip install "git+https://github.com/michaelatamuk/laix.git@<tag>#subdirectory=packages/python/laix"`.
 4. Run `py -m pytest -q server`, the quality replay test and `py -m rootcause.quality.bench`.
 5. If a contract change is breaking, update the adapter and the quality plugin in the same commit.
 
@@ -193,5 +193,5 @@ replayable, not that it is correct on real plant data.
 | `server/tests/test_laix_replay.py` | Fixture replay through the plugin |
 | `server/tests/test_laix_isolation.py` | Local package removed; external LAIX installed |
 
-Read also: [LAIX integration](https://github.com/michaelatamuk/laix/blob/v0.2.1/docs/integration.md)
-and [the LAIX Python package](https://github.com/michaelatamuk/laix/blob/v0.2.1/python/laix/README.md).
+Read also: [LAIX integration](https://github.com/michaelatamuk/laix/blob/v0.6.0/docs/integration.md)
+and [the LAIX Python package](https://github.com/michaelatamuk/laix/blob/v0.6.0/packages/python/laix/README.md).
