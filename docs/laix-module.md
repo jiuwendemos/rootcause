@@ -49,7 +49,7 @@ the LAIX fields (`verb`, `reason_code`, `rationale`, `evidence`, `requires_appro
 `server/pyproject.toml` pins LAIX to a tag, never a branch:
 
 ```toml
-"laix @ git+https://github.com/michaelatamuk/laix.git@v0.6.0#subdirectory=packages/python/laix",
+"laix @ git+https://github.com/michaelatamuk/laix.git@v0.7.0#subdirectory=packages/python/laix",
 ```
 
 Local co-development, once:
@@ -193,5 +193,5 @@ replayable, not that it is correct on real plant data.
 | `server/tests/test_laix_replay.py` | Fixture replay through the plugin |
 | `server/tests/test_laix_isolation.py` | Local package removed; external LAIX installed |
 
-Read also: [LAIX integration](https://github.com/michaelatamuk/laix/blob/v0.6.0/docs/integration.md)
-and [the LAIX Python package](https://github.com/michaelatamuk/laix/blob/v0.6.0/packages/python/laix/README.md).
+Read also: [LAIX host integration](https://github.com/michaelatamuk/laix/blob/v0.7.0/docs/host-integration.md)
+and [the LAIX Python package](https://github.com/michaelatamuk/laix/blob/v0.7.0/packages/python/laix/README.md).

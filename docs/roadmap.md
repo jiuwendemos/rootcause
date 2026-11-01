@@ -754,7 +754,7 @@ future promise; claim NPU, live connectors or customer data; position RootCause 
 
 ## LAIX decision layer
 
-LAIX is a pinned dependency (`laix @ git+…@v0.6.0`); the quality intervention policy is a RootCause
+LAIX is a pinned dependency (`laix @ git+…@v0.7.0`); the quality intervention policy is a RootCause
 plugin. See [docs/laix-module.md](laix-module.md).
 
 - [x] LAIX installed from the pinned tag; the local `server/rootcause/laix/` package is gone

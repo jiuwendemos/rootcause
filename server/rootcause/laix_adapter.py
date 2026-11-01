@@ -14,7 +14,7 @@ import os
 from collections.abc import Iterable
 
 from laix import DecisionRequest, Layer
-from laix.layer import Decision as LayerDecision
+from laix.appkit.layer import Decision as LayerDecision
 
 from .models import RiskSignal, WatchCase
 from .quality import (

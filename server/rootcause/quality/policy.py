@@ -18,7 +18,7 @@ from dataclasses import asdict
 from datetime import UTC, datetime
 
 from laix import DecisionRequest, LayerDecision
-from laix.layer import Breakdown, EvidenceRef
+from laix.appkit.layer import Breakdown, EvidenceRef
 
 from .contracts import Constraints, DecisionRecord, ExperienceState, Signal
 
