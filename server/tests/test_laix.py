@@ -110,7 +110,7 @@ def test_layer_selects_the_quality_plugin():
     status = selected.status()
     assert status["policy"] == "quality-intervention.v1"
     assert status["policyVersion"] == "1.0"
-    assert status["schemaVersion"] == "1.1"
+    assert status["schemaVersion"] == "0.6.0"
 
 
 def test_adapter_records_the_decision_and_maps_the_app_shape():
